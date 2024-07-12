@@ -1,0 +1,48 @@
+.name{
+  display: inline-block;
+  width: 60%;
+}
+.not_enough{
+  background-color: #ccc;
+}
+.cost{
+  margin-left: 30px;
+}
+.child{
+  width: 50%;
+  float: left;
+}
+.tac{
+  text-align: center;
+}
+.clear{
+  clear: both;
+  text-align: right;
+  font-size: small;
+}
+.job{
+  width: 640px;
+  height: 700px;
+  margin: 0 auto;
+}
+.search{
+  font-size: small;
+  margin-left: 20px;
+}
+#content{
+  background-color: #fff;
+  padding-top: 20px;
+}
+ol{
+  list-style-type: none;
+  line-height: 1.8;
+}
+h1{
+  margin-top: 50px;
+}
+p{
+  margin: 0;
+}
+li{
+  border-bottom: #000 1px solid;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="こころ道.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="main.js"></script>
+</head>
+<body onload="selectJob();">
+<div id="main">
+		<p class="tac">
+			<select name="job" id="select_job" onchange="selectJob();">
+				<option value="01-ゴッドハンド">ゴッドハンド</option>
+				<option value="02-大魔道士">大魔道士</option>
+				<option value="03-大神官">大神官</option>
+				<option value="04-ニンジャ">ニンジャ</option>
+				<option value="05-魔剣士">魔剣士</option>
+				<option value="06-守り人">守り人</option>
+			</select>
+			<!-- <button id="save" onclick="saveImage();">画像として保存</button> -->
+		</p>
+		<div id="content"></div>
+</div>
+</body>
+</html>
