@@ -1,12 +1,17 @@
-.name{
+/* .name{
   display: inline-block;
   width: 60%;
+} */
+.center{
+    width: unset;
+    margin-right: 20px;
 }
 .not_enough{
   background-color: #ccc;
 }
 .cost{
-  margin-left: 30px;
+    display: inline-block;
+    width: 30%;
 }
 .child{
     /* padding: 0 20px; */
@@ -32,6 +37,9 @@
 }
 .children{
   padding: 0 20px;
+}
+.search_center{
+  font-size: small;
 }
 #content{
   background-color: #fff;
