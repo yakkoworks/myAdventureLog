@@ -2,6 +2,9 @@
   display: inline-block;
   width: 60%;
 } */
+body{
+  background-color: #fff;
+}
 .center{
     width: unset;
     margin-right: 20px;
@@ -28,7 +31,7 @@
 }
 .job{
   /* width: 640px; */
-  /* height: 700px; */
+  height: 700px;
   margin: 0 auto;
 }
 .search{
@@ -42,8 +45,8 @@
   font-size: small;
 }
 #content{
-  background-color: #fff;
   padding-top: 20px;
+  justify-content: space-between;
 }
 #header{
   text-align: center;
@@ -53,22 +56,16 @@ ol{
   list-style-type: none;
   line-height: 1.8;
 }
-h1{
-  margin-top: 50px;
-}
 p{
   margin: 0;
 }
 ol>li{
   border-bottom: #000 1px solid;
 }
-ul>li{
-  /* float: left; */
-  display: inline;
-  list-style: none;
+.active{
+  border-bottom: 3px solid #000;
+  border-width: 3px;
 }
-/* ul::after{
-  content: "";
-  display: block;
-  clear: both;
-} */
+#nav>span {
+  padding: 0 10px;
+}
