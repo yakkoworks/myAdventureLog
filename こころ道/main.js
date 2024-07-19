@@ -18,9 +18,10 @@ function jump(index){
     var nav = document.getElementById("nav-"+index);
     nav.classList.add("active");
 }
-// function selectJob(){
-// 		var selected = document.getElementById("select_job").value;
-//         fetch("./"+selected+".html") //ロード元URL
-//         .then(data => data.text())
-//         .then(html => document.getElementById("content").innerHTML += html)
-// }
+
+function selectJob(){
+		var selected = document.getElementById("select_job").value;
+        fetch("./"+selected+".html") //ロード元URL
+        .then(data => data.text())
+        .then(html => document.getElementById("content").innerHTML = html)
+}
