@@ -1,0 +1,14 @@
+:root{
+	--color-backgroud:#0d1117;
+	--color-emphasis: #161b22;
+	--color-text: #fff;
+	--color-link: #4493f8;
+}
+body{
+	background-color: var(--color-backgroud);
+	color: var(--color-text);
+}
+a{
+	text-decoration: none;
+	color: var(--color-link);
+}
