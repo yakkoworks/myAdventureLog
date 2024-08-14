@@ -1,0 +1,38 @@
+.tac{
+	text-align: center;
+}
+#exchangeKokoroList{
+	margin: 0 auto 40px;
+	width: 100%;
+}
+#addList-cost{
+	width: 3em;
+}
+button{
+	height: 3em;
+	width: 8em;
+}
+td.name{
+	text-align: left;
+}
+td.cost{
+    text-align: left;
+}
+td.color{
+	text-align: right;
+}
+.color1::before{
+	content: '🟡';
+}
+.color2::before{
+	content: '🔴';
+}
+.color3::before{
+	content: '🔵';
+}
+.color4::before{
+	content: '🟣';
+}
+.color5::before{
+	content: '🟢';
+}

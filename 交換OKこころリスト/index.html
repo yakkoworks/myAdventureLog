@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="localforage.min.js"></script>
+	<script src="main.js"></script>
+	<script src="util.js"></script>
+	<title>Document</title>
+</head>
+<body class="tac" onload="onload();">
+	<h1>交換OKこころリスト</h1>
+	<table id="exchangeKokoroList"></table>
+	<button onclick="showModalDialog('dialog-addList')">追加</button>
+	<dialog id="dialog-addList">
+		<form method="dialog" onsubmit="addExchangeKokoroList()" onreset="closeModalDialog('dialog-addList')">
+			<p>
+				<select name="addList-color" id="addList-color">
+					<option value="1">🟡</option>
+					<option value="2">🔴</option>
+					<option value="3">🔵</option>
+					<option value="4">🟣</option>
+					<option value="5">🟢</option>
+				</select>
+				<input type="text" id="addList-name" placeholder="モンスター名">
+				<input type="number" id="addList-cost" placeholder="コスト">
+</p>
+	<p>
+					<button type="reset">キャンセル</button>
+					<button type="submit">OK</button>
+		
+	</p>		
+		</form>
+	</dialog>
+</body>
+</html>
