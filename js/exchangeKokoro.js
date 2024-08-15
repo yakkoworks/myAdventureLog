@@ -1,4 +1,5 @@
-function onload(){
+
+function initExchangeKokoro(){
 	var exchangeKokoroList = document.getElementById("exchangeKokoroList");
 	var arr = [];
 	localforage.iterate(function(value, key, i) {
@@ -20,7 +21,7 @@ function onload(){
 	});
 }
 function addExchangeKokoroList(){
-	var kokoroId = "exchangeKokoro_"+createFileName();
+	var kokoroId = "exchangeKokoro_"+util.createFileName();
 	var kokoroData = {
 		color:document.getElementById("addList-color").value,
 		name: document.getElementById("addList-name").value,

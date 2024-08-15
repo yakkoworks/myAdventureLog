@@ -5,7 +5,7 @@ function closeModalDialog(id){
     document.getElementById(id).close();
 }
 
-function createFileName(){
+export function createFileName(){
     var date = formatDate();
     var time = formatTime();
     return date+'-'+time;
@@ -38,6 +38,6 @@ function formatTime(){
 }
 
 // 10文字のランダム文字列を生成
-function createRandomStrings(){
+export function createRandomStrings(){
     return Math.random().toString(26).slice(-11);
 }

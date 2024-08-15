@@ -1,11 +1,14 @@
-function initKokoroMich(){
+function initKokoroMichi(){
     fetch("../kokoroMichi/01.html") //ロード元URL
     .then(data => data.text())
     .then(html => document.getElementById("content").innerHTML = html)
     var nav = document.getElementById("nav-01");
     nav.classList.add("active");
 }
-
+/**
+ * ジャンプ
+ * @param {*} index 
+ */
 function jump(index){
     fetch("./"+index+".html") //ロード元URL
     .then(data => data.text())

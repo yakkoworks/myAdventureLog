@@ -3,17 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="../style.css">
-	<script src="localforage.min.js"></script>
-	<script src="exchangeKokoro.js"></script>
-	<script src="../js/util.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/exchangeKokoro.css">
+	<script src="./js/localforage.min.js"></script>
+	<script src="./js/exchangeKokoro.js"></script>
 	<title>Document</title>
 </head>
-<body class="tac" onload="onload();">
+<body class="tac" onload="initExchangeKokoro();">
 	<h1>交換OKこころリスト</h1>
 	<table id="exchangeKokoroList"></table>
-	<p class="tac">最終更新：2024/08/14</p>
 	<button onclick="showModalDialog('dialog-addList')">追加</button>
 	<dialog id="dialog-addList">
 		<form method="dialog" onsubmit="addExchangeKokoroList()" onreset="closeModalDialog('dialog-addList')">

@@ -12,3 +12,7 @@ a{
 	text-decoration: none;
 	color: var(--color-link);
 }
+h1{
+	    font-size: 1.4em;
+    text-align: center;
+}
