@@ -7,7 +7,20 @@
 	<link rel="stylesheet" href="css/kokoroMichi.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/util.js"></script>
-	<script src="js/kokoroMichi.js"></script>
+	<script>
+		function initKokoroMichi(){
+    fetch("./kokoroMichi/01.html") //ロード元URL
+    .then(data => data.text())
+    .then(html => document.getElementById("content").innerHTML = html)
+}
+function selectJob(){
+		var selected = document.getElementById("select_job").value;
+        fetch("./kokoroMichi/"+selected+".html") //ロード元URL
+        .then(data => data.text())
+        .then(html => document.getElementById("content").innerHTML = html)
+}
+
+	</script>
 </head>
 <body onload="initKokoroMichi();">
 	<div id="header">

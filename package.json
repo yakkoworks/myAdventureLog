@@ -11,5 +11,18 @@
     "ecosystem:cordova"
   ],
   "author": "Apache Cordova Team",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-drawoverapps": {}
+    }
+  },
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-drawoverapps": "github:ahmedwahba/cordova-plugin-drawoverapps"
+  }
 }
