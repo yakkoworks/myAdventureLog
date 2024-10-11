@@ -1,5 +1,5 @@
 function initKokoroMichi(){
-    fetch("./kokoroMichi/01.html") //ロード元URL
+    fetch("https://yakkoworks.github.io/myAdventureLog/kokoroMichi/01.html") //ロード元URL
     .then(data => data.text())
     .then(html => document.getElementById("content").innerHTML = html)
     var nav = document.getElementById("nav-01");
