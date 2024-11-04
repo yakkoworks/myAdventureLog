@@ -62,3 +62,6 @@ ol>li{
 #nav>span {
   padding: 0 10px;
 }
+a.job:not(:last-child):after{
+	content: "｜";
+}
